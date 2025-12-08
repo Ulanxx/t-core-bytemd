@@ -432,8 +432,16 @@
         locale={mergedLocale}
         {currentBlockIndex}
         on:click={(e) => {
-          const headings = previewEl.querySelectorAll('h1,h2,h3,h4,h5,h6')
-          headings[e.detail].scrollIntoView()
+          const { index, blockIndex } = e.detail
+          // 立即更新 currentBlockIndex，解决内容到底后点击底部 TOC 项无反馈的问题
+          currentBlockIndex = blockIndex
+          const markdownBody = previewEl.querySelector('.markdown-body')
+          if (!markdownBody) return
+          const headings = markdownBody.querySelectorAll('h1,h2,h3,h4,h5,h6')
+          const heading = headings[index]
+          if (heading) {
+            heading.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
         }}
         visible={sidebar === 'toc'}
       />

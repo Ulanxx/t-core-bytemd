@@ -1,5 +1,5 @@
 import { icons } from './icons'
-import type { BytemdAction } from 'bytemd'
+import type { BytemdAction } from '@t-agent/bytemd'
 
 export type MathLocale = {
   inline: string

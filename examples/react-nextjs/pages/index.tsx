@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
-import pluginGfm from '@bytemd/plugin-gfm'
-import { Editor } from '@bytemd/react'
+import pluginGfm from '@t-agent/bytemd-plugin-gfm'
+import { Editor } from '@t-agent/bytemd-react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useMemo, useState } from 'react'

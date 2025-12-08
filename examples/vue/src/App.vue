@@ -6,8 +6,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Editor } from '@bytemd/vue'
-import 'bytemd/dist/index.css'
+import { Editor } from '@t-agent/bytemd-vue'
+import '@t-agent/bytemd/dist/index.css'
 
 export default Vue.extend({
   name: 'App',

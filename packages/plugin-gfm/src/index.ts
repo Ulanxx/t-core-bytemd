@@ -1,6 +1,6 @@
 import { icons } from './icons'
 import en from './locales/en.json'
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import remarkGfm, { Options } from 'remark-gfm'
 
 type Locale = {

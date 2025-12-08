@@ -1,4 +1,4 @@
-import * as bytemd from 'bytemd'
+import * as bytemd from '@t-agent/bytemd'
 import React, { useEffect, useRef } from 'react'
 
 export interface EditorProps extends bytemd.EditorProps {

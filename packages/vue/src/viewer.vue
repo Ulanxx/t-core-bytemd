@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { getProcessor } from 'bytemd'
+import { getProcessor } from '@t-agent/bytemd'
 
 export default {
   props: ['value', 'plugins', 'sanitize', 'remarkRehype'],

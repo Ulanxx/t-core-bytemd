@@ -1,5 +1,5 @@
 {
-  "name": "@bytemd/vue",
+  "name": "@t-agent/bytemd-vue",
   "version": "1.22.0",
   "description": "Hackable Markdown Editor and Viewer",
   "repository": {
@@ -28,7 +28,7 @@
     "locales"
   ],
   "dependencies": {
-    "bytemd": "workspace:*"
+    "@t-agent/bytemd": "workspace:*"
   },
   "devDependencies": {
     "vite-plugin-vue2": "^2.0.3",

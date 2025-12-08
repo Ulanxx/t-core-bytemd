@@ -1,6 +1,6 @@
 import en from './locales/en.json'
 import { MathLocale, getMathActions } from './utils'
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import type { default as K, KatexOptions } from 'katex'
 import remarkMath from 'remark-math'
 

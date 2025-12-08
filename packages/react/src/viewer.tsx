@@ -1,4 +1,4 @@
-import * as bytemd from 'bytemd'
+import * as bytemd from '@t-agent/bytemd'
 import React, { useMemo, useEffect, useRef, FC } from 'react'
 
 export interface ViewerProps extends bytemd.ViewerProps {}

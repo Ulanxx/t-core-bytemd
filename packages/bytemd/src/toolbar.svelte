@@ -76,26 +76,26 @@
       active: previewActive,
       hidden: !split,
     },
-    {
-      title: fullscreen ? locale.exitFullscreen : locale.fullscreen,
-      icon: fullscreen ? icons.OffScreen : icons.FullScreen,
-      handler: {
-        type: 'action',
-        click() {
-          dispatch('click', 'fullscreen')
-        },
-      },
-    },
-    {
-      title: locale.source,
-      icon: icons.GithubOne,
-      handler: {
-        type: 'action',
-        click() {
-          window.open('https://github.com/bytedance/bytemd')
-        },
-      },
-    },
+    // {
+    //   title: fullscreen ? locale.exitFullscreen : locale.fullscreen,
+    //   icon: fullscreen ? icons.OffScreen : icons.FullScreen,
+    //   handler: {
+    //     type: 'action',
+    //     click() {
+    //       dispatch('click', 'fullscreen')
+    //     },
+    //   },
+    // },
+    // {
+    //   title: locale.source,
+    //   icon: icons.GithubOne,
+    //   handler: {
+    //     type: 'action',
+    //     click() {
+    //       window.open('https://github.com/bytedance/bytemd')
+    //     },
+    //   },
+    // },
     ...rightAfferentActions,
   ] as RightAction[]
 

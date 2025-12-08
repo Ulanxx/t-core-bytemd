@@ -1,4 +1,4 @@
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import type H from 'highlight.js'
 
 export interface BytemdPluginHighlightOptions {

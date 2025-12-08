@@ -19,10 +19,10 @@ Playground here: https://bytemd.js.org/playground/
 
 | Package | Status | Description |
 | --- | --- | --- |
-| [bytemd](https://github.com/bytedance/bytemd/tree/main/packages/bytemd) | [![npm](https://img.shields.io/npm/v/bytemd?label=)](https://npm.im/bytemd) | Svelte/Vanilla JS component |
-| [@bytemd/react](https://github.com/bytedance/bytemd/tree/main/packages/react) | [![npm](https://img.shields.io/npm/v/@bytemd/react.svg?label=)](https://npm.im/@bytemd/react) | React component |
-| [@bytemd/vue](https://github.com/bytedance/bytemd/tree/main/packages/vue) | [![npm](https://img.shields.io/npm/v/@bytemd/vue.svg?label=)](https://npm.im/@bytemd/vue) | Vue 2 component |
-| [@bytemd/vue-next](https://github.com/bytedance/bytemd/tree/main/packages/vue-next) | [![npm](https://img.shields.io/npm/v/@bytemd/vue-next.svg?label=)](https://npm.im/@bytemd/vue-next) | Vue 3 component |
+| [@t-agent/bytemd](https://github.com/bytedance/bytemd/tree/main/packages/bytemd) | [![npm](https://img.shields.io/npm/v/@t-agent/bytemd?label=)](https://npm.im/@t-agent/bytemd) | Svelte/Vanilla JS component |
+| [@t-agent/bytemd-react](https://github.com/bytedance/bytemd/tree/main/packages/react) | [![npm](https://img.shields.io/npm/v/@t-agent/bytemd-react.svg?label=)](https://npm.im/@t-agent/bytemd-react) | React component |
+| [@t-agent/bytemd-vue](https://github.com/bytedance/bytemd/tree/main/packages/vue) | [![npm](https://img.shields.io/npm/v/@t-agent/bytemd-vue.svg?label=)](https://npm.im/@t-agent/bytemd-vue) | Vue 2 component |
+| [@t-agent/bytemd-vue-next](https://github.com/bytedance/bytemd/tree/main/packages/vue-next) | [![npm](https://img.shields.io/npm/v/@t-agent/bytemd-vue-next.svg?label=)](https://npm.im/@t-agent/bytemd-vue-next) | Vue 3 component |
 
 ### Legacy browsers support
 
@@ -39,15 +39,15 @@ There are two components: `Editor` and `Viewer`. `Editor` is the Markdown editor
 Before using the component, remember to import CSS file to make styles correct:
 
 ```js
-import 'bytemd/dist/index.css'
+import '@t-agent/bytemd/dist/index.css'
 ```
 
 ### Svelte
 
 ```svelte
 <script>
-  import { Editor, Viewer } from 'bytemd'
-  import gfm from '@bytemd/plugin-gfm'
+  import { Editor, Viewer } from '@t-agent/bytemd'
+  import gfm from '@t-agent/bytemd-plugin-gfm'
 
   let value
   const plugins = [
@@ -68,8 +68,8 @@ import 'bytemd/dist/index.css'
 ### React
 
 ```js
-import gfm from '@bytemd/plugin-gfm'
-import { Editor, Viewer } from '@bytemd/react'
+import gfm from '@t-agent/bytemd-plugin-gfm'
+import { Editor, Viewer } from '@t-agent/bytemd-react'
 
 const plugins = [
   gfm(),
@@ -99,8 +99,8 @@ const App = () => {
 </template>
 
 <script>
-import gfm from '@bytemd/plugin-gfm'
-import { Editor, Viewer } from '@bytemd/vue'
+import gfm from '@t-agent/bytemd-plugin-gfm'
+import { Editor, Viewer } from '@t-agent/bytemd-vue'
 
 const plugins = [
   gfm(),
@@ -124,8 +124,8 @@ export default {
 ### Vanilla JS
 
 ```js
-import gfm from '@bytemd/plugin-gfm'
-import { Editor, Viewer } from 'bytemd'
+import { Editor, Viewer } from '@t-agent/bytemd'
+import gfm from '@t-agent/bytemd-plugin-gfm'
 
 const plugins = [
   gfm(),
@@ -234,7 +234,7 @@ We'll take Math formula plugin as an example to walk you through the process.
 First of all, scaffold the project according to the `BytemdPlugin` type signature:
 
 ```ts
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 
 export default function mathPlugin(): BytemdPlugin {
   return {
@@ -252,7 +252,7 @@ Then we look into the requirement more closely: If we want to render syntax like
 For the first thing, luckily, we don't need to implement it with our own because [remark-math](https://github.com/remarkjs/remark-math) already did it. The only thing we need to do is to import and use it:
 
 ```diff
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 +import remarkMath from 'remark-math'
 
 export default function mathPlugin(): BytemdPlugin {
@@ -263,11 +263,11 @@ export default function mathPlugin(): BytemdPlugin {
 }
 ```
 
-Then consider the second thing, it would be a little complicated because we have two choices, do it in step 5 or 7. The difference is that step 5 is more friendly with SSR, while step 7 hand over the rendering to the client-side. This is why we have two plugin: [@bytemd/plugin-math](https://github.com/bytedance/bytemd/tree/main/packages/plugin-math) and [@bytemd/plugin-math-ssr](https://github.com/bytedance/bytemd/tree/main/packages/plugin-math-ssr).
+Then consider the second thing, it would be a little complicated because we have two choices, do it in step 5 or 7. The difference is that step 5 is more friendly with SSR, while step 7 hand over the rendering to the client-side. This is why we have two plugin: [@t-agent/bytemd-plugin-math](https://github.com/bytedance/bytemd/tree/main/packages/plugin-math) and [@t-agent/bytemd-plugin-math-ssr](https://github.com/bytedance/bytemd/tree/main/packages/plugin-math-ssr).
 
 ```diff
 // if we choose step 5:
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import remarkMath from 'remark-math'
 +import rehypeKatex from 'rehype-katex'
 
@@ -279,7 +279,7 @@ export default function mathPlugin(): BytemdPlugin {
 }
 
 // if we choose step 7:
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import remarkMath from 'remark-math'
 +import rehypeKatex from 'rehype-katex'
 

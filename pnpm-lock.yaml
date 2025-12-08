@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -28,6 +32,9 @@ importers:
       '@types/resolve':
         specifier: ^1.20.2
         version: 1.20.2
+      chokidar:
+        specifier: ^3.5.3
+        version: 3.5.3
       conventional-changelog-cli:
         specifier: ^2.2.2
         version: 2.2.2
@@ -165,7 +172,7 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -184,7 +191,7 @@ importers:
         specifier: ^5.3.7
         version: 5.3.7
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -194,7 +201,7 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -204,7 +211,7 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -214,7 +221,7 @@ importers:
         specifier: ^11.7.0
         version: 11.7.0
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -224,7 +231,7 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -240,7 +247,7 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -253,7 +260,7 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -263,7 +270,7 @@ importers:
         specifier: ^1.0.8
         version: 1.0.8
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
@@ -273,13 +280,13 @@ importers:
         specifier: ^10.0.2
         version: 10.0.2
     devDependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
 
   packages/react:
     dependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
     devDependencies:
@@ -292,7 +299,7 @@ importers:
 
   packages/vue:
     dependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
     devDependencies:
@@ -308,7 +315,7 @@ importers:
 
   packages/vue-next:
     dependencies:
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../bytemd
     devDependencies:
@@ -321,42 +328,42 @@ importers:
 
   playground:
     dependencies:
-      '@bytemd/plugin-breaks':
-        specifier: workspace:*
-        version: link:../packages/plugin-breaks
-      '@bytemd/plugin-frontmatter':
-        specifier: workspace:*
-        version: link:../packages/plugin-frontmatter
-      '@bytemd/plugin-gemoji':
-        specifier: workspace:*
-        version: link:../packages/plugin-gemoji
-      '@bytemd/plugin-gfm':
-        specifier: workspace:*
-        version: link:../packages/plugin-gfm
-      '@bytemd/plugin-highlight':
-        specifier: workspace:*
-        version: link:../packages/plugin-highlight
-      '@bytemd/plugin-highlight-ssr':
-        specifier: workspace:*
-        version: link:../packages/plugin-highlight-ssr
-      '@bytemd/plugin-math':
-        specifier: workspace:*
-        version: link:../packages/plugin-math
-      '@bytemd/plugin-math-ssr':
-        specifier: workspace:*
-        version: link:../packages/plugin-math-ssr
-      '@bytemd/plugin-medium-zoom':
-        specifier: workspace:*
-        version: link:../packages/plugin-medium-zoom
-      '@bytemd/plugin-mermaid':
-        specifier: workspace:*
-        version: link:../packages/plugin-mermaid
       '@sveltejs/vite-plugin-svelte':
         specifier: 2.0.4
         version: 2.0.4(svelte@3.57.0)(vite@4.2.1)
-      bytemd:
+      '@t-agent/bytemd':
         specifier: workspace:*
         version: link:../packages/bytemd
+      '@t-agent/bytemd-plugin-breaks':
+        specifier: workspace:*
+        version: link:../packages/plugin-breaks
+      '@t-agent/bytemd-plugin-frontmatter':
+        specifier: workspace:*
+        version: link:../packages/plugin-frontmatter
+      '@t-agent/bytemd-plugin-gemoji':
+        specifier: workspace:*
+        version: link:../packages/plugin-gemoji
+      '@t-agent/bytemd-plugin-gfm':
+        specifier: workspace:*
+        version: link:../packages/plugin-gfm
+      '@t-agent/bytemd-plugin-highlight':
+        specifier: workspace:*
+        version: link:../packages/plugin-highlight
+      '@t-agent/bytemd-plugin-highlight-ssr':
+        specifier: workspace:*
+        version: link:../packages/plugin-highlight-ssr
+      '@t-agent/bytemd-plugin-math':
+        specifier: workspace:*
+        version: link:../packages/plugin-math
+      '@t-agent/bytemd-plugin-math-ssr':
+        specifier: workspace:*
+        version: link:../packages/plugin-math-ssr
+      '@t-agent/bytemd-plugin-medium-zoom':
+        specifier: workspace:*
+        version: link:../packages/plugin-medium-zoom
+      '@t-agent/bytemd-plugin-mermaid':
+        specifier: workspace:*
+        version: link:../packages/plugin-mermaid
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0

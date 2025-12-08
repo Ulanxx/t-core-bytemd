@@ -1,4 +1,4 @@
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import type * as M from 'medium-zoom'
 
 export interface BytemdPluginMediumZoomOptions extends M.ZoomOptions {

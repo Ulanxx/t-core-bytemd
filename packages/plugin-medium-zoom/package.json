@@ -1,5 +1,5 @@
 {
-  "name": "@bytemd/plugin-medium-zoom",
+  "name": "@t-agent/bytemd-plugin-medium-zoom",
   "version": "1.22.0",
   "description": "ByteMD plugin to zoom images like Medium",
   "repository": {
@@ -31,9 +31,9 @@
     "medium-zoom": "^1.0.8"
   },
   "devDependencies": {
-    "bytemd": "workspace:*"
+    "@t-agent/bytemd": "workspace:*"
   },
   "peerDependencies": {
-    "bytemd": "^1.5.0"
+    "@t-agent/bytemd": "^1.5.0"
   }
 }

@@ -7,9 +7,9 @@
     "serve": "vue-cli-service serve"
   },
   "dependencies": {
-    "@bytemd/plugin-gfm": "latest",
-    "@bytemd/vue": "latest",
-    "bytemd": "latest",
+    "@t-agent/bytemd-plugin-gfm": "latest",
+    "@t-agent/bytemd-vue": "latest",
+    "@t-agent/bytemd": "latest",
     "vue": "^2.6.14"
   },
   "devDependencies": {

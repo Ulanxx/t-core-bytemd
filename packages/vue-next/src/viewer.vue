@@ -18,7 +18,7 @@ import {
   Ref,
   nextTick,
 } from 'vue'
-import { getProcessor } from 'bytemd'
+import { getProcessor } from '@t-agent/bytemd'
 
 export default defineComponent({
   props: ['value', 'plugins', 'sanitize', 'remarkRehype'],

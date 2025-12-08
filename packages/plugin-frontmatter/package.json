@@ -1,5 +1,5 @@
 {
-  "name": "@bytemd/plugin-frontmatter",
+  "name": "@t-agent/bytemd-plugin-frontmatter",
   "version": "1.22.0",
   "description": "ByteMD plugin to parse frontmatter",
   "repository": {
@@ -34,9 +34,9 @@
     "vfile": "^5.3.7"
   },
   "devDependencies": {
-    "bytemd": "workspace:*"
+    "@t-agent/bytemd": "workspace:*"
   },
   "peerDependencies": {
-    "bytemd": "^1.5.0"
+    "@t-agent/bytemd": "^1.5.0"
   }
 }

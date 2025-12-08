@@ -1,5 +1,5 @@
 {
-  "name": "@bytemd/plugin-highlight-ssr",
+  "name": "@t-agent/bytemd-plugin-highlight-ssr",
   "version": "1.22.0",
   "description": "ByteMD plugin to highlight code blocks (SSR compatible)",
   "repository": {
@@ -31,9 +31,9 @@
     "rehype-highlight": "^6.0.0"
   },
   "devDependencies": {
-    "bytemd": "workspace:*"
+    "@t-agent/bytemd": "workspace:*"
   },
   "peerDependencies": {
-    "bytemd": "^1.5.0"
+    "@t-agent/bytemd": "^1.5.0"
   }
 }

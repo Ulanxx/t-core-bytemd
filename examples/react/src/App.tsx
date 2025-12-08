@@ -1,7 +1,7 @@
 import './App.css'
-import pluginGfm from '@bytemd/plugin-gfm'
-import { Editor } from '@bytemd/react'
-import 'bytemd/dist/index.css'
+import pluginGfm from '@t-agent/bytemd-plugin-gfm'
+import { Editor } from '@t-agent/bytemd-react'
+import '@t-agent/bytemd/dist/index.css'
 import React, { useMemo, useState } from 'react'
 
 function App() {

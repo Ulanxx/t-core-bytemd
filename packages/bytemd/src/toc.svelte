@@ -13,9 +13,10 @@
 
   const dispatch = createEventDispatcher()
 
-  let items: { level: number; text: string }[]
+  let items: { level: number; text: string; blockIndex: number }[]
   let minLevel = 6
   let currentHeadingIndex = 0
+  let clickedIndex: number | null = null // 乐观更新：点击时立即高亮
 
   function stringifyHeading(e: Element) {
     let result = ''
@@ -40,6 +41,7 @@
           items.push({
             level: i,
             text: stringifyHeading(node),
+            blockIndex: index,
           })
         }
 
@@ -57,15 +59,19 @@
     {#each items as item, index}
       <li
         class={`bytemd-toc-${item.level}`}
-        class:bytemd-toc-active={currentHeadingIndex === index}
+        class:bytemd-toc-active={clickedIndex !== null
+          ? clickedIndex === index
+          : currentHeadingIndex === index}
         class:bytemd-toc-first={item.level === minLevel}
         style={`padding-left:${(item.level - minLevel) * 16 + 8}px`}
         on:click={() => {
-          dispatch('click', index)
+          clickedIndex = index // 乐观更新：立即高亮
+          dispatch('click', { index, blockIndex: item.blockIndex })
         }}
         on:keydown|self={(e) => {
           if (['Enter', 'Space'].includes(e.code)) {
-            dispatch('click', index)
+            clickedIndex = index // 乐观更新：立即高亮
+            dispatch('click', { index, blockIndex: item.blockIndex })
           }
         }}
       >

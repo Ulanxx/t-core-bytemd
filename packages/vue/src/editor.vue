@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import * as bytemd from 'bytemd'
+import * as bytemd from '@t-agent/bytemd'
 
 export default {
   props: {

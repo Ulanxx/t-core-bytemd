@@ -8,9 +8,9 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@bytemd/plugin-gfm": "latest",
-    "@bytemd/vue-next": "latest",
-    "bytemd": "latest",
+    "@t-agent/bytemd-plugin-gfm": "latest",
+    "@t-agent/bytemd-vue-next": "latest",
+    "@t-agent/bytemd": "latest",
     "vue": "^3.2.31"
   },
   "devDependencies": {

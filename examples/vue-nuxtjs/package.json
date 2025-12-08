@@ -9,9 +9,9 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "@bytemd/plugin-gfm": "latest",
-    "@bytemd/vue": "latest",
-    "bytemd": "latest",
+    "@t-agent/bytemd-plugin-gfm": "latest",
+    "@t-agent/bytemd-vue": "latest",
+    "@t-agent/bytemd": "latest",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",

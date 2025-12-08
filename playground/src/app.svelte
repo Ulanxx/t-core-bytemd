@@ -1,15 +1,15 @@
 <script lang="ts">
   import markdownText from './text.md?raw'
-  import breaks from '@bytemd/plugin-breaks'
-  import frontmatter from '@bytemd/plugin-frontmatter'
-  import gemoji from '@bytemd/plugin-gemoji'
-  import gfm from '@bytemd/plugin-gfm'
-  import highlight from '@bytemd/plugin-highlight'
-  import math from '@bytemd/plugin-math'
-  import mediumZoom from '@bytemd/plugin-medium-zoom'
-  import mermaid from '@bytemd/plugin-mermaid'
-  import { Editor } from 'bytemd'
-  import 'bytemd/dist/index.css'
+  import breaks from '@t-agent/bytemd-plugin-breaks'
+  import frontmatter from '@t-agent/bytemd-plugin-frontmatter'
+  import gemoji from '@t-agent/bytemd-plugin-gemoji'
+  import gfm from '@t-agent/bytemd-plugin-gfm'
+  import highlight from '@t-agent/bytemd-plugin-highlight'
+  import math from '@t-agent/bytemd-plugin-math'
+  import mediumZoom from '@t-agent/bytemd-plugin-medium-zoom'
+  import mermaid from '@t-agent/bytemd-plugin-mermaid'
+  import { Editor } from '@t-agent/bytemd'
+  import '@t-agent/bytemd/dist/index.css'
   import 'github-markdown-css'
   import 'highlight.js/styles/vs.css'
   // placed after highlight styles to override `code` padding
@@ -24,20 +24,20 @@
   }
 
   const locales = stripPrefixes(
-    import.meta.glob('/node_modules/bytemd/locales/*.json', { eager: true })
+    import.meta.glob('/node_modules/@t-agent/bytemd/locales/*.json', { eager: true })
   )
   const gfmLocales = stripPrefixes(
-    import.meta.glob('/node_modules/@bytemd/plugin-gfm/locales/*.json', {
+    import.meta.glob('/node_modules/@t-agent/bytemd-plugin-gfm/locales/*.json', {
       eager: true,
     })
   )
   const mathLocales = stripPrefixes(
-    import.meta.glob('/node_modules/@bytemd/plugin-math/locales/*.json', {
+    import.meta.glob('/node_modules/@t-agent/bytemd-plugin-math/locales/*.json', {
       eager: true,
     })
   )
   const mermaidLocales = stripPrefixes(
-    import.meta.glob('/node_modules/@bytemd/plugin-mermaid/locales/*.json', {
+    import.meta.glob('/node_modules/@t-agent/bytemd-plugin-mermaid/locales/*.json', {
       eager: true,
     })
   )

@@ -1,5 +1,5 @@
 {
-  "name": "@bytemd/vue-next",
+  "name": "@t-agent/bytemd-vue-next",
   "version": "1.22.0",
   "description": "Hackable Markdown Editor and Viewer",
   "repository": {
@@ -28,7 +28,7 @@
     "locales"
   ],
   "dependencies": {
-    "bytemd": "workspace:*"
+    "@t-agent/bytemd": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

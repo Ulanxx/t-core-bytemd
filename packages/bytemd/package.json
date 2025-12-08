@@ -1,5 +1,5 @@
 {
-  "name": "bytemd",
+  "name": "@t-agent/bytemd",
   "version": "1.22.0",
   "description": "Hackable Markdown Editor and Viewer",
   "keywords": [
@@ -17,14 +17,11 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "svelte": "./svelte/index.js",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
     "./locales/*": "./locales/*",
-    "./lib/locales/*": "./locales/*",
-    "./dist/index.css": "./dist/index.css",
-    "./dist/index.min.css": "./dist/index.min.css"
+    "./lib/locales/*": "./locales/*"
   },
   "main": "./dist/index.js",
   "svelte": "./svelte/index.js",
@@ -34,8 +31,7 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "locales",
-    "svelte"
+    "locales"
   ],
   "dependencies": {
     "@popperjs/core": "^2.11.7",

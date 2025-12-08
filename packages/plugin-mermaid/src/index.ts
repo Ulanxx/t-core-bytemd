@@ -1,6 +1,6 @@
 import { icons } from './icons'
 import en from './locales/en.json'
-import type { BytemdPlugin } from 'bytemd'
+import type { BytemdPlugin } from '@t-agent/bytemd'
 import type { default as Mermaid, MermaidConfig } from 'mermaid'
 
 type Locale = {

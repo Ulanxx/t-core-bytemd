@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, Ref, ref, watch } from 'vue'
-import { Editor } from 'bytemd'
+import { Editor } from '@t-agent/bytemd'
 
 export default defineComponent({
   props: {
