@@ -1,6 +1,6 @@
 {
   "name": "@t-agent/bytemd-plugin-mermaid",
-  "version": "1.23.0",
+  "version": "1.23.1",
   "description": "ByteMD plugin to support Mermaid diagram",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "mermaid": "^10.0.2"
   },
   "devDependencies": {
-    "@t-agent/bytemd": "^1.23.0"
+    "@t-agent/bytemd": "^1.23.1"
   },
   "peerDependencies": {
     "@t-agent/bytemd": "^1.5.0"

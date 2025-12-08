@@ -1,6 +1,6 @@
 {
   "name": "@t-agent/bytemd-plugin-gemoji",
-  "version": "1.23.0",
+  "version": "1.23.1",
   "description": "ByteMD plugin to support Gemoji shortcodes",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "remark-gemoji": "^7.0.1"
   },
   "devDependencies": {
-    "@t-agent/bytemd": "^1.23.0"
+    "@t-agent/bytemd": "^1.23.1"
   },
   "peerDependencies": {
     "@t-agent/bytemd": "^1.5.0"
