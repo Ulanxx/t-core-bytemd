@@ -1,6 +1,6 @@
 {
   "name": "@t-agent/bytemd-plugin-breaks",
-  "version": "1.22.0",
+  "version": "1.22.1",
   "description": "ByteMD plugin to support breaks",
   "repository": {
     "type": "git",

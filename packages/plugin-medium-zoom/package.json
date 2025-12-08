@@ -1,6 +1,6 @@
 {
   "name": "@t-agent/bytemd-plugin-medium-zoom",
-  "version": "1.22.0",
+  "version": "1.22.1",
   "description": "ByteMD plugin to zoom images like Medium",
   "repository": {
     "type": "git",
