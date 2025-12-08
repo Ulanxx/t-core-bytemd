@@ -2,5 +2,10 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "useWorkspaces": true,
   "version": "1.23.0",
-  "registry": "https://registry.npmjs.org"
+  "registry": "https://registry.npmjs.org",
+  "command": {
+    "publish": {
+      "access": "public"
+    }
+  }
 }
