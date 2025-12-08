@@ -28,7 +28,7 @@
     "locales"
   ],
   "dependencies": {
-    "@t-agent/bytemd": "workspace:*"
+    "@t-agent/bytemd": "1.22.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
@@ -36,5 +36,6 @@
   },
   "peerDependencies": {
     "vue": "^3.0.0"
-  }
+  },
+  "gitHead": "f05e607408cf2808f089f964c149a04c498a22b1"
 }
