@@ -14,16 +14,6 @@
   },
   "license": "MIT",
   "author": "Rongjian Zhang",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
-    "./dist/*": "./dist/*",
-    "./locales/*": "./locales/*",
-    "./lib/locales/*": "./locales/*"
-  },
   "main": "./dist/index.js",
   "svelte": "./svelte/index.js",
   "jsdelivr": "./dist/index.umd.js",
@@ -57,6 +47,9 @@
   },
   "devDependencies": {
     "@primer/css": "^15.2.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0 || ^4.0.0"
   },
   "gitHead": "0e492abbbaec07f4e5cb7bfebaf46c16fa3e610d"
 }
